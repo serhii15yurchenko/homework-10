@@ -1,0 +1,318 @@
+* {
+  box-sizing: border-box;
+  line-height: 1;
+  scroll-behavior: smooth;
+}
+
+main {
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  main {
+    padding: 120px 0;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .heading {
+    margin-bottom: 40px;
+  }
+}
+.heading span {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #898F8F;
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  .heading span {
+    font-size: 18px;
+  }
+}
+.heading h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  color: #FFCC00;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .heading h1 {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+}
+.heading .divider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.heading .divider .bonfire {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+.heading .divider::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #FFCC00;
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  .heading .divider::after {
+    width: 100px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .heading .divider::after {
+    width: 210px;
+  }
+}
+.heading .divider::before {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #FFCC00;
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  .heading .divider::before {
+    width: 100px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .heading .divider::before {
+    width: 210px;
+  }
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1030px;
+}
+@media only screen and (min-width: 960px) {
+  .main-info {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.photo-side {
+  padding: 15px 0;
+}
+@media only screen and (min-width: 768px) {
+  .photo-side {
+    padding: 30px 0;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .photo-side {
+    padding-right: 85px;
+    border-right: 1px solid #FFCC00;
+    width: 50%;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+.photo-side .photo {
+  background: linear-gradient(to right, #FFCC00 1px, transparent 1px) 0 0, linear-gradient(to right, #FFCC00 1px, transparent 1px) 0 100%, linear-gradient(to left, #FFCC00 1px, transparent 1px) 100% 0, linear-gradient(to left, #FFCC00 1px, transparent 1px) 100% 100%, linear-gradient(to bottom, #FFCC00 1px, transparent 1px) 0 0, linear-gradient(to bottom, #FFCC00 1px, transparent 1px) 100% 0, linear-gradient(to top, #FFCC00 1px, transparent 1px) 0 100%, linear-gradient(to top, #FFCC00 1px, transparent 1px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  padding: 15px;
+}
+.photo-side .photo .avatar {
+  width: 100%;
+}
+
+.info-side {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .info-side {
+    padding: 30px 0;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .info-side {
+    padding-left: 85px;
+    width: 50%;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+.info-side h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 33px;
+  color: #666666;
+  position: relative;
+  margin-bottom: 60px;
+  display: block;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .info-side h3 {
+    font-size: 36px;
+  }
+}
+.info-side h3::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #FFCC00;
+  position: absolute;
+  left: 30%;
+  bottom: -30px;
+}
+.info-side .subtitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #666666;
+  margin-bottom: 30px;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .info-side .subtitle {
+    font-size: 24px;
+  }
+}
+.info-side .social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 25px;
+}
+@media only screen and (min-width: 768px) {
+  .info-side .social {
+    margin-bottom: 50px;
+  }
+}
+.info-side .social .social-item {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #CCCCCC;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.info-side .social .social-item:hover {
+  border-color: #666666;
+  transition: all 0.4s ease;
+}
+.info-side .social .social-item:hover .icon {
+  fill: #FFCC00;
+  transition: all 0.4s ease;
+}
+.info-side .social .social-item:not(:last-child) {
+  margin-right: 5px;
+}
+.info-side .social .social-item a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-side .social .social-item a .icon {
+  fill: #CCCCCC;
+  transition: all 0.3s ease;
+}
+.info-side .social .social-item a .facebook {
+  width: 6px;
+  height: 12px;
+}
+.info-side .social .social-item a .twitter {
+  width: 15px;
+  height: 12px;
+}
+.info-side .social .social-item a .google {
+  width: 19px;
+  height: 12px;
+}
+.info-side .social .social-item a .linkedin {
+  width: 12px;
+  height: 12px;
+}
+.info-side .text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  max-width: 430px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+.info-side .line-decor {
+  width: 20px;
+  height: 4px;
+  background-color: #FFCC00;
+  display: block;
+  position: relative;
+  margin-bottom: 25px;
+}
+.info-side .line-decor::after {
+  content: "";
+  width: 10px;
+  height: 4px;
+  background-color: #FFCC00;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -15px;
+}
+.info-side .line-decor::before {
+  content: "";
+  width: 10px;
+  height: 4px;
+  background-color: #FFCC00;
+  display: block;
+  position: absolute;
+  left: -15px;
+}
+.info-side .link {
+  text-decoration: none;
+  color: #666666;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border: 1px solid #FFCC00;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.info-side .link:hover {
+  transition: all 0.4s ease;
+  color: #333333;
+}
+
+/*# sourceMappingURL=style.css.map */
