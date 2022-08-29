@@ -6,6 +6,17 @@
     scroll-behavior: smooth;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 main{
     padding: 70px 0;
     display: flex;
@@ -45,7 +56,7 @@ main{
         }
     }
 
-    h1 {
+    h2 {
         font-family: $roboto;
         font-weight: 900;
         font-size: 40px;
